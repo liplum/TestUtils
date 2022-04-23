@@ -1,4 +1,5 @@
 # TestUtils
+A libray of junit extensions.
 [![](https://jitpack.io/v/liplum/TestUtils.svg)](https://jitpack.io/#liplum/TestUtils)
 ## Usage
 
@@ -11,6 +12,6 @@ allprojects {
 }
 // Step 2
 dependencies {
-    implementation 'com.github.liplum:TestUtils:<Tag>'
+    testImplementation 'com.github.liplum:TestUtils:<Tag>'
 }
 ```
