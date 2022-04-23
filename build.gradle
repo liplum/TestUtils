@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'net.liplum'
+version '0.1'
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['test']
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+test {
+    useJUnitPlatform {
+        includeTags 'fast'
+        excludeTags 'slow'
+    }
+    testLogging {
+        showStandardStreams = true
+        testLogging.exceptionFormat = 'full'
+    }
+}
